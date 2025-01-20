@@ -14,8 +14,3 @@ services:
       - 3306:3306 # make sure you don't have another container running on 3306
     volumes:
       - ./mysql:/var/lib/mysql
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8080:8080
